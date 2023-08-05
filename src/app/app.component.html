@@ -1,0 +1,24 @@
+<div *ngIf="current_view == 'list' ">
+    <app-card-page 
+    [users]="users"
+    [pages]='pages'
+    [current_page]="current_page"
+
+    (page)="getUsers($event)"
+    (profile)="getUser($event)"
+    (search)="getUsers(1, $event)"
+    ></app-card-page>
+    <app-loading-bar></app-loading-bar>
+</div>
+
+<div *ngIf="current_view == 'profile' ">
+    <app-profile 
+    [profile]="profile"
+    ></app-profile>
+    <app-loading-bar></app-loading-bar>
+   <div class="butt">
+    <button
+    (click)="toMenu()"
+    >back</button>
+</div>
+</div>

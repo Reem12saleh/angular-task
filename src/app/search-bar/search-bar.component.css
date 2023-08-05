@@ -1,0 +1,15 @@
+input{
+    width: 25%;
+    text-align: left;
+    color:rgb(23, 52, 78);
+    border: 1px solid rgb(23, 52, 78);
+    margin-top: 10px;
+    margin:0 auto;
+    margin-bottom: 5px;
+    display: block;
+    border-radius: 15px;
+    transition-duration: 0.4s;
+}
+input:hover{
+box-shadow: 0 14px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

@@ -1,0 +1,43 @@
+.card {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 18rem;
+  background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+}
+
+.card-img-top {
+  width: 50%;
+  height: auto;
+  border-radius: 200px;
+  border: 1px solid #07111f;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color:  rgb(23, 52, 78);
+}
+
+.card-text-age,
+.card-text-id {
+  font-size: 25px;
+  color:rgb(23, 52, 78);
+  margin-bottom: 0.5rem;
+}
+
+.card:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

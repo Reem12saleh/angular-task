@@ -1,0 +1,18 @@
+.butt{
+    text-align: center;
+
+}
+button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 30px;
+     width: 150px;
+     color: #07111f;
+    border: 1px solid #B8C1C9 ;
+    border-radius: 5%;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color: #B8C1C9;
+}

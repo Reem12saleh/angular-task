@@ -1,0 +1,39 @@
+.body{
+    width: 100%;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    
+}
+header{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: rgb(23, 52, 78) ;
+    text-shadow: 2px 2px 2px white;
+}
+.container{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.pos{
+    text-align: center;
+}
+
+button{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 1px solid #B8C1C9 ;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #B8C1C9;
+}
+
+button:visited{
+    background-color: #B8C1C9;
+}

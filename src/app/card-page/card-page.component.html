@@ -1,0 +1,57 @@
+<header>
+  <h1>Users List</h1>
+</header>
+
+<app-search-bar
+  (key)="searchQuery($event)"
+></app-search-bar>
+<div class="pos">
+<div *ngIf="pages.length <= 6" style="max-width: 17%; margin: 0 auto;">
+  <button 
+    *ngFor="let page of pages" 
+    (click)="pageQuery(page)"
+    style="color: black;"
+  >{{ page }}</button>
+</div>
+
+<div
+  *ngIf="pages.length > 6"
+  style="max-width: 17%; margin: 0 auto;"
+>
+  <button 
+  (click)="pageQuery(pages[0])"
+  style="color: black;"
+  >{{ pages[0] }}</button>
+
+  <div *ngFor="let page in pages">
+    <button
+      *ngIf="
+        page != pages[0] 
+        && page!= pages[pages.length - 1]
+        && page >= current_page - 2
+        && page <= current_page + 3
+      "
+      (click)="pageQuery(page)"
+      style="color: black;"
+    >{{ page }}</button>
+  </div>
+
+  <button 
+  (click)="pageQuery(pages[pages.length - 1])"
+  style="color: black;"
+  >{{ pages[pages.length - 1] }}</button>
+</div>
+</div>
+
+<div class="container" >
+  <app-card *ngFor="let user of users"
+  
+    [id]="user.id"
+    [first_name]="user.first_name"
+    [last_name]="user.last_name"
+    [email]="user.email"
+    [avatar]="user.avatar"
+
+    (click)="profileQuery(user.id)"
+  ></app-card>  
+</div>
